@@ -1,0 +1,302 @@
+/* importing fonts from external providers*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* initial context setup */
+img,
+embed,
+video,
+object {
+    max-width: 100%;
+}
+
+nav a,
+button {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*body full width site formatting and reorg*/
+@media screen and (min-width: 1024px) {
+    body {
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+header,
+nav,
+footer,
+section,
+article,
+div,
+aside {
+    box-sizing: border-box;
+}
+
+/* total page sizing contgrol */
+.header__inner,
+.asidebar,
+.articles__section {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* header */
+.header {
+    min-height: 56px;
+    overflow: auto;
+}
+
+.header__inner {
+    max-width: 100%;
+    padding: 10px;
+    overflow: auto;
+    border-bottom: 5px solid #7d97ad;
+}
+
+.header__logo {
+    height: 72px;
+    margin: 12px 0 0 0;
+    float: left;
+}
+
+.header__title {
+    font: 300 1.35em Roboto, sans-serif;
+    font-size: 7vw;
+    margin: 10px 0 0 0;
+    display: inline-block;
+    color: #212121;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*to maintain page formate the font is really small for small screens, we start increaing the font as the view port gets bigger*/
+@media screen and (min-width: 390px) {
+    .header__title {
+        font-size: 2em;
+        font-size: 7vw;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .header__title {
+        font-size: 2.75em;
+    }
+}
+
+.header__slogan {
+    font: lighter 0.9em Roboto, sans-serif;
+    font-size: 4vw;
+    margin: 0;
+    display: inline-block;
+    color: #212121;
+    float: right;
+    clear: right;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/*as title size was increased so did the slogan*/
+@media screen and (min-width: 390px) {
+    .header__slogan {
+        font-size: 1em;
+        font-size: 3.5vw;
+    }
+}
+
+/*once we reached our target size we fix it*/
+@media screen and (min-width: 500px) {
+    .header__slogan {
+        font-size: 1.25em;
+    }
+}
+
+/*header full width site formatting and reorg*/
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 100%;
+        float: right;
+    }
+
+    .header__inner {
+        width: 90%;
+        float: right;
+    }
+}
+
+
+/*sidebar*/
+.asidebar {
+    max-width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.aside__list {
+    list-style: none; /*otherwise bulleted*/
+    padding: 0; /*removing default padding*/
+    margin: 0; /*removing default margin*/
+}
+
+.aside__list__item {
+    display: inline-block;
+    width: 33.33%; /*3 columns*/
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em Roboto, sans-serif;
+}
+
+.aside__list__item:hover {
+    opacity: 0.7; /*effect when mouse over a colorbox div*/
+}
+
+.colorbox {
+    height: 48px;
+    width: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.colorbox__p {
+    text-align: center;
+    font: 1.1em Roboto, sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.colorbox__p-02b3e4,
+.colorbox__p-2d3c49,
+.colorbox__p-7d97ad {
+    color: #2d3c49;
+}
+
+.colorbox__box-02b3e4 {
+    background-color: #02b3e4;
+}
+
+.colorbox__box-2d3c49 {
+    background-color: #2d3c49;
+}
+
+.colorbox__box-7d97ad {
+    background-color: #7d97ad;
+}
+
+/*aside bar full width site formatting and reorg*/
+@media screen and (min-width: 1024px) {
+    .asidebar {
+        max-width: 10%; /*aside bar is now on the right and should take only 20% of the site as the other 80% is used by main content*/
+        float: left;
+        padding: 0 20px 0 0;
+        margin: 0; /*margin not required when side bar gets floted to the left*/
+    }
+
+    /*buttons start to look small at thist point, increasing its size to be more screen size coherent*/
+    .colorbox {
+        height: 60px; /*this gets resized as otherwise boxes are too small for big screens*/
+        width: 60px;
+        float: right;
+    }
+
+    .colorbox__p {
+        text-align: right;
+        font: 1.25em/2em Roboto, sans-serif;
+    }
+
+    .aside__list {
+        float: right;
+    }
+
+    .aside__list__item {
+        display: block;
+        overflow: auto;
+        width: 100%
+    }
+}
+
+
+/*main section*/
+.articles__section {
+    max-width: 100%;
+}
+
+.articles__section__title {
+    margin: 0.8em 0 0.6em 0;
+    font: lighter 1.75em Roboto, sans-serif;
+    color: #7d97ad;
+    text-align: center;
+}
+
+.article__box {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #7d97ad;
+    text-align: center;
+}
+
+.article__title {
+    margin: 5px 0 5px 0;
+    text-align: center;
+    font: lighter 1.75em Roboto, sans-serif;
+    letter-spacing: 2px;
+}
+
+.article__url {
+    font: lighter 1em Roboto, sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+.article__image {
+    width: 298px;
+}
+
+/*our intial articles section is line organized, at 800px changed to 3 columns inline*/
+@media screen and (min-width: 800px) {
+    .article__box {
+        border-bottom: 0; /*border not used anymore*/
+    }
+
+    .articles__section__title {
+        margin: 0.8em 0 0.6em 1em; /*this changed as it is now inline*/
+        letter-spacing: 1.5px;
+        font: 300 2em Roboto, sans-serif;
+        color: #7d97ad;
+        text-align: left;
+    }
+
+    .article__box {
+        float: left;
+        width: 33.33%; /*3 columns*/
+        padding: 0 1em 0 1em;
+    }
+
+    .article__title {
+        font-size: 2em;
+    }
+
+    .article__url {
+        font-size: 0.85em;
+    }
+}
+
+/*articles section full width site formatting and reorg*/
+@media screen and (min-width: 1024px) {
+    .articles__section {
+        max-width: 90%;
+        float: right;
+        margin: 20px 0 0 0;
+    }
+}

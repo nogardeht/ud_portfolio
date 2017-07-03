@@ -1,0 +1,49 @@
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Diego Hernan Marciano</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/round_small.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class="header">
+      <!-- Container needed to limit the bottom border and limit the floats on full sized view ports. -->
+      <div class="header__inner">
+        <img class="header__logo" src="img/round_small.png" alt="Diego's logo">
+        <!-- TODO: Full name is Diego Hernan Marciano but is too long for small screens, content could be added when view port gets bigger. -->
+        <h1 class="header__title">Diego Marciano</h1>
+        <p class="header__slogan">Front-End Ninja</p>
+      </div>
+    </header>
+    <!-- On small screens aside bar will act as an horizontal nav, on full screen aside is floated to right with 100% height -->
+    <aside class="asidebar">
+      <ul class="aside__list">
+        <!-- On one line to avoid anonymous boxes -->
+        <li class="aside__list__item"><div class="colorbox colorbox__box-02b3e4"></div><p class="colorbox__p colorbox__p-02b3e4">#02b3e4</p></li><li class="aside__list__item"><div class="colorbox colorbox__box-2d3c49"></div><p class="colorbox__p colorbox__p-2d3c49">#2d3c49</p></li><li class="aside__list__item"><div class="colorbox colorbox__box-7d97ad"></div><p class="colorbox__p colorbox__p-7d97ad">#7d97ad</p></li>
+      </ul>
+    </aside>
+    <section class="articles__section">
+      <img src="img/main.png" alt="The main image with some html blurred code in it.">
+      <h2 class="articles__section__title" >Featured Work</h2>
+      <!-- Site is themed for 3 columns only on full view, if more needed theme should be adjusted -->
+      <article class="article__box">
+        <img class="article__image" src="img/testsectionimg.png" alt="Article test image">
+        <h3 class="article__title">APPIFY</h3>
+        <a class="article__url" href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+      </article>
+      <article class="article__box">
+        <img class="article__image" src="img/testsectionimg1.png" alt="Article test image">
+        <h3 class="article__title">SUNFLOWER</h3>
+        <a class="article__url" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+      </article>
+      <article class="article__box">
+        <img class="article__image" src="img/testsectionimg2.png" alt="Article test image">
+        <h3 class="article__title">BOKEH</h3>
+        <a class="article__url" href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+      </article>
+    </section>
+  </body>
+</html>

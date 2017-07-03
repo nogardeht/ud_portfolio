@@ -2,8 +2,8 @@
 
 A simple web design with the following structre:
 
-./index.html <home page>
-./css/main.css <main css stylesheet>
-./img/* <images>
+./index.html \<home page><br>
+./css/main.css \<main css stylesheet><br>
+./img/* \<images><br>
 
 The site was designed to be responsive and tested in multiple view ports ranging from 320px wide to 4k screens. A side bar appears at 1024px wide, below that the sidebar is an horizontal navigation bar.

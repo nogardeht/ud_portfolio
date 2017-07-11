@@ -4,4 +4,5 @@ A simple web design based on bootstrap and tested in different mobile and deskto
 
 The site was designed to be responsive and tested in multiple view ports ranging from 320px wide to 4k screens.
 
+
 A main.css file contains all custom styling.
